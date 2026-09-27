@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Union College Rocket Club</title>
+  <meta name="description" content="Union College Rocket Club (UCRC) — students across majors designing, building, and launching rockets in Schenectady, NY.">
+  <style>
+    :root {
+      --garnet: #822433;
+      --garnet-dark: #5e1a25;
+      --ink: #1d1d1f;
+      --muted: #5a5a5f;
+      --bg: #faf8f6;
+      --card: #ffffff;
+      --line: #e6e1dc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--garnet); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      background: linear-gradient(160deg, var(--garnet-dark), var(--garnet));
+      color: #fff;
+      padding: 72px 0 64px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.2rem); letter-spacing: -0.02em; }
+    header p { margin: 0 auto 28px; max-width: 560px; font-size: 1.1rem; opacity: 0.92; }
+    .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 999px;
+      font-weight: 600; text-decoration: none;
+      background: #fff; color: var(--garnet-dark);
+    }
+    .btn.outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); }
+    .btn:hover { opacity: 0.88; }
+
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(250,248,246,0.95); border-bottom: 1px solid var(--line);
+    }
+    nav .wrap { display: flex; gap: 24px; justify-content: center; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-weight: 600; color: var(--ink); }
+    nav a:hover { color: var(--garnet); }
+
+    section { padding: 56px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    h2 { font-size: 1.7rem; margin: 0 0 20px; }
+
+    .highlight {
+      background: var(--card); border-left: 4px solid var(--garnet);
+      padding: 16px 20px; border-radius: 6px; margin-top: 20px;
+    }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .gallery figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+    .gallery img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .gallery img.diagram { object-fit: contain; background: #fff; }
+    .gallery figcaption { padding: 10px 14px; font-size: 0.92rem; color: var(--muted); }
+
+    .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .link-card {
+      display: block; padding: 20px; border-radius: 10px; text-decoration: none;
+      background: var(--card); border: 1px solid var(--line); color: var(--ink);
+    }
+    .link-card:hover { border-color: var(--garnet); }
+    .link-card strong { display: block; color: var(--garnet); margin-bottom: 4px; }
+    .link-card span { color: var(--muted); font-size: 0.95rem; }
+
+    footer { text-align: center; padding: 32px 0; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>Union College Rocket Club</h1>
+      <p>Students across every major designing, building, and launching rockets in Schenectady, NY.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.instagram.com/ucrocketclub/" target="_blank" rel="noopener">Follow us on Instagram</a>
+        <a class="btn outline" href="#about">About the club</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+      <a href="#links">Links</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <h2>About us</h2>
+        <p>The Union College Rocket Club (UCRC) brings together students across majors to explore rocketry, from 3D modeling and payload design to hands-on building, fabrication, and launching. No experience is needed. We hold regular hobby launches, and our competition team builds a rocket from scratch each year for the national Battle of the Rockets competition.</p>
+        <p>We also run activities that introduce local kids to science and engineering through rocketry.</p>
+        <div class="highlight">
+          <strong>April 2026:</strong> our scratch-built rocket <em>Charger</em> took first place in the Deployable Payload Event at Battle of the Rockets in Culpeper, Virginia.
+          <a href="https://www.union.edu/news/stories/202604/rocket-club-soars-new-heights-first-place-finish-national-competition" target="_blank" rel="noopener">Read the story</a>.
+        </div>
+      </div>
+    </section>
+
+    <section id="photos">
+      <div class="wrap">
+        <h2>Photos</h2>
+        <div class="gallery">
+          <figure>
+            <img src="images/team-with-charger.jpg" alt="Five team members holding the first-place plaque with Charger on the launch field" loading="lazy">
+            <figcaption>The team with Charger and the first-place plaque at Battle of the Rockets.</figcaption>
+          </figure>
+          <figure>
+            <img class="diagram" src="images/charger.jpg" alt="Charger, an orange and white rocket labeled UCRC 2026" loading="lazy">
+            <figcaption>Charger, our 2026 competition rocket, built from scratch.</figcaption>
+          </figure>
+          <figure>
+            <img class="diagram" src="images/charger-cad.jpg" alt="3D computer model of Charger, outside view and cutaway" loading="lazy">
+            <figcaption>Charger's 3D design: outside view (top) and cutaway (bottom).</figcaption>
+          </figure>
+          <figure>
+            <img class="diagram" src="images/flight-plan.jpg" alt="Diagram of Charger's flight from liftoff to parachute landing" loading="lazy">
+            <figcaption>Flight plan: liftoff, two parachute deployments, and landing.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://www.union.edu/sites/default/files/styles/large/public/union-marketing-layer/202604/pxl20260410160157611exported11988.jpg.webp?itok=zkZ_-mhy" alt="Charger rocket in flight" loading="lazy">
+            <figcaption>Charger in flight. Photo: Union College.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://www.union.edu/sites/default/files/styles/large/public/engineering/202606/2026teamphotoforwebsite.jpg.webp?itok=jJNaFYTX" alt="Rocket Club 2026 team photo" loading="lazy">
+            <figcaption>2026 team. Photo: Union College.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="links">
+      <div class="wrap">
+        <h2>Links</h2>
+        <div class="links">
+          <a class="link-card" href="https://www.instagram.com/ucrocketclub/" target="_blank" rel="noopener">
+            <strong>Instagram</strong><span>Launch photos, build updates, and meeting announcements.</span>
+          </a>
+          <a class="link-card" href="https://www.union.edu/engineering/engineering-competition-teams" target="_blank" rel="noopener">
+            <strong>Engineering Competition Teams</strong><span>Our page on Union College's engineering site.</span>
+          </a>
+          <a class="link-card" href="https://www.union.edu/news/stories/202604/rocket-club-soars-new-heights-first-place-finish-national-competition" target="_blank" rel="noopener">
+            <strong>First place at nationals</strong><span>Union College news story on Charger, April 2026.</span>
+          </a>
+          <a class="link-card" href="https://www.union.edu/engineering/clubs-and-organizations" target="_blank" rel="noopener">
+            <strong>Engineering Clubs &amp; Advisors</strong><span>Union College list of engineering clubs and contacts.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Union College Rocket Club &middot; Schenectady, NY</div>
+  </footer>
+
+</body>
+</html>
